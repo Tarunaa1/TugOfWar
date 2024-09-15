@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Tug of War</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main">
+    
+
+    <!-- Rope section -->
+     <div style="text-align: center;">
+        <h1>Tug of War</h1>
+        <h2>Enter Your Team Name</h2>
+        <input type="text" id="name" placeholder="enterName">
+        <button id="enter">Enter</button>
+        <p id="finding">Finding</p>
+     </div>
+    <div class="rope-container">
+      <p id="team1" class="team"></p>
+      <div id="rope1" class="rope"></div>
+      <div id="rope2" class="rope"></div>
+      <p id="team2" class="team"></p>
+    </div>
+        
+        <div class="lineg">
+           <div class="olock">
+            <div class="g">
+                <div class="one" ></div>
+                <!-- <div class="hidden">
+                    <h4>Enter password</h4>
+                    <input id="pass" placeholder="enter password">
+                    <button id="clickpass">Submit</button>
+                </div> -->
+            </div>
+            <div class="ilock"></div>
+           </div>
+            <div class="olock">
+                <div class="g ">
+                <div class="two"></div>
+                </div>
+                <div class="ilock"></div>
+            </div>
+            <div class="olock">
+                <div class="g ">
+                    <div class="three"></div>
+                </div>
+                <div class="ilock"></div>
+            </div>
+            <div class="olock">
+                <div class="g ">
+                    <div class="four"></div>
+                </div>
+                <div class="ilock"></div>
+            </div>
+            <div class="olock">
+                <div class="g ">
+                    <div class="five"></div>
+                </div>
+                <div class="ilock"></div>
+            </div>
+        </div>
+
+
+        <div class="character">
+    </div>
+    
+   
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script> <!-- Include Socket.IO library -->
+  <script src="script.js"></script>
+</body>
+</html>
