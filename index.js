@@ -3,17 +3,8 @@ const express = require('express');
 const path = require('path');
 const http = require('http');
 const { Server } = require('socket.io');
-
-const mongoose = require('mongoose');
-const connectDB = require('./config/db');
-const gameRoutes = require('./routes/gameRoutes');
-
 const app = express();
 
-app.use('/api/games', gameRoutes);
-
-// Connect to the database
-connectDB();
 
 // Create HTTP server
 const server = http.createServer(app);
